@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_ajout"
+        android:title="Ajouter"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/item_configuration"
+        android:title="Configuration"
+        android:icon="@android:drawable/button_onoff_indicator_off"
+        app:showAsAction="never"
+        />
+
+</menu>

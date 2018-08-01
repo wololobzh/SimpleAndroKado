@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.acos.androkado.ConfigurationActivity"
+    android:paddingTop="20dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_tri_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tri par prix"
+        />
+
+    <Switch
+        android:id="@+id/s_tri_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/s_tri_prix"
+        />
+
+    <TextView
+        android:id="@+id/tv_prix_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix par défaut"
+        app:layout_constraintTop_toBottomOf="@id/s_tri_prix"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/et_prix_defaut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_prix_default"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        />
+
+</android.support.constraint.ConstraintLayout>

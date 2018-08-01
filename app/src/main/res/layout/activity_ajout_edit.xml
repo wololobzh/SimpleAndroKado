@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.acos.androkado.AjoutEditActivity">
+
+    <EditText
+        android:id="@+id/edit_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/article_nom_hint"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/article_monnaie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_prix"
+        android:layout_toRightOf="@+id/edit_prix"
+        android:hint="@string/article_monnaie_hint"
+        android:text="@string/article_monnaie_default" />
+
+    <EditText
+        android:id="@+id/edit_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_nom"
+        android:layout_alignRight="@+id/edit_nom"
+        android:layout_below="@+id/edit_nom"
+        android:ems="15"
+        android:hint="@string/article_prix_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_prix"
+        android:layout_below="@+id/edit_prix"
+        android:ems="10"
+        android:hint="@string/article_description_hint"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_envie"
+        android:layout_toLeftOf="@+id/article_monnaie"
+        android:ems="10"
+        android:hint="@string/article_url_hint"
+        android:inputType="textUri" />
+
+    <RatingBar
+        android:id="@+id/edit_envie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_url"
+        android:layout_below="@+id/edit_description"
+        android:layout_marginTop="93dp"
+        android:isIndicator="false"
+        android:max="4"
+        android:numStars="4"
+        android:progress="0" />
+
+</RelativeLayout>
